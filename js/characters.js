@@ -28,7 +28,7 @@ characters = [{
     },
     {
         name: 'Svengali',
-        tagline: 'The Anti-Clown',
+        tagline: 'The Flim-flam man',
         about: "He keeps saying he is the Anti-clown but we're pretty sure he doesn't know what that means. Svengali, God bless him has expored the following careers: travel agent, storyteller, easter bunny, ballerina and sub-par tinder date. We hope he will get his next job right.",
         actor: 'John Cowgell',
         image: '../images/sven.jpg',

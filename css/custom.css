@@ -12,6 +12,10 @@ body:not(.user-is-tabbing) textarea:fous {
   outline: none;
 }
 
+form {
+  z-index: 9999;
+}
+
 header {
   background-color: #cc0000;
   border-bottom: 2px black solid;

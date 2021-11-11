@@ -12,6 +12,10 @@ body {
     }
 }
 
+form {
+    z-index: 9999;
+}
+
 header {
     background-color: darken($primary, 10);
     border-bottom: 2px black solid;
