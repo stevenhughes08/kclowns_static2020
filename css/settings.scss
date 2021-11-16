@@ -5,7 +5,7 @@ $primary-dark: darken($primary, 25%);
 $secondary: #222;
 $button-color:lighten($primary, 25);
 $button-color-hover: darken(whitesmoke, 20);
-$clown-header-font: 'Indie Flower',
+$header-font: 'Indie Flower',
 cursive;
 // $calc-height: calc(100vb / $nav-items);
 // Breakpoints
@@ -23,7 +23,7 @@ $breakpoints: ( sm: 768px, md: 992px, lg: 1200px, ) !default;
 }
 
 @mixin clown-heading {
-    font-family: $clown-header-font;
+    font-family: $header-font;
     text-align: center;
     list-style-type: none;
     li {
@@ -51,7 +51,7 @@ $breakpoints: ( sm: 768px, md: 992px, lg: 1200px, ) !default;
     .ctaBtns {
         margin: 1% 5% 1% 5%;
         p {
-            font-family: $clown-header-font;
+            font-family: $header-font;
             color: $primary;
             font-size: 3rem;
             background-color: #fff;
