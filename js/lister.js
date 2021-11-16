@@ -11,12 +11,19 @@ console.log(activeClowns);
 
 const charCardMarkup = `${activeClowns.map(char => `
 <div class="card">
-<ul id="charData">
-<li class="charPic"><img src="${char.image}" alt="character pic"></li>
-<li class="charName">${char.name}</li>
-<li class="charTagline">${char.tagline}</li>
-<li class="charAbout">${char.about}</li>
-</ul>
+<div class="col">
+    <div class="card-text card-prop">
+        <h2 class="char-name">${char.name}</h2>
+        <p>${char.tagline}</p>
+        <p>${char.about}</p>
+    </div>
+</div>
+<div class="col">
+    <div class="card-img card-prop">
+        <img class="center img-fluid" src="${char.image}" alt="Follow ${char.name}">
+    </div>
+
+</div>
 </div>
 `)}`;
 

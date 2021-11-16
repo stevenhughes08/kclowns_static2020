@@ -18,12 +18,20 @@ characters = [{
             //traits = ['adorable', 'resourceful', 'blue']
     },
     {
+        name: 'Duke',
+        tagline: "Bourbon!",
+        about: "I'm a God Damn Doctor of Journalism. ",
+        actor: "Athena Pyrodiko",
+        image: 'images/duke_blueboy.jpg',
+        isActive: true
+    },
+    {
         name: 'Salty',
         tagline: "I don't want the world I only want your half.",
         about: 'Times are tough all over and so is Salty. Christened with athority by the clown enforcement agency, Salty has found herself responsible for policing the clowns. She does not care for her job - often shirking her duties when she finds them in convienient. If you like Salty she is alaways taking bribes.',
         actor: 'Deb Adams',
         image: '../images/salty.jpg',
-        isActive: true
+        isActive: false
             //traits = ['athority', 'sarcastic', 'pink']
     },
     {
