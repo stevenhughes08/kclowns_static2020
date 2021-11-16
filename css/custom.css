@@ -1,17 +1,225 @@
-/* Error: Undefined variable.
- *    ,
- * 20 |     background-color: darken($primary, 10);
- *    |                              ^^^^^^^^
- *    '
- *   custom.scss 20:30  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 20 \2502      background-color: darken($primary, 10);\d\a    \2502                               ^^^^^^^^\a    \2575 \a   custom.scss 20:30  root stylesheet";
+.row {
+  display: flex;
+  flex-direction: row;
 }
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  border: 2px black solid;
+  border-radius: 10px;
+  margin: 4rem;
+  padding: 3rem 3rem 0 3rem;
+}
+
+.container {
+  width: 100%;
+  margin: 3rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: calibri;
+}
+html:not(.user-is-tabbing) button:focus, html:not(.user-is-tabbing) input:focus, html:not(.user-is-tabbing) select:focus, html:not(.user-is-tabbing) textarea:focus,
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
+}
+
+form {
+  z-index: 9999;
+}
+
+header {
+  background-color: #cc0000;
+  border-bottom: 2px black solid;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: -1;
+}
+
+.no-mobile {
+  display: none;
+}
+
+.social-media-pane a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  padding: 10px;
+  border-radius: 90px;
+  margin-left: 10px;
+  background-color: whitesmoke;
+  opacity: 0.6;
+  transition: width 2s, height 2s, transform 2s;
+}
+.social-media-pane a:hover {
+  transform: rotate(180deg);
+}
+
+.burger-wrapper {
+  position: absolute;
+  right: 20px;
+}
+
+.burger {
+  display: block;
+  color: #ccc;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+}
+
+#NavBar {
+  position: absolute;
+}
+
+.nav {
+  margin: 0;
+  background: maroon;
+  color: #ccc;
+  position: absolute;
+  right: -100%;
+  top: 70px;
+  width: 50%;
+  height: calc(100% - 70px);
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 20px;
+  transition: all 400ms;
+}
+.nav .dorak-nav-pic {
+  position: absolute;
+  align-self: center;
+  bottom: 20px;
+  width: 80%;
+  max-width: 80%;
+  margin: 10%;
+  transform: scale(30%) rotate(-10deg);
+  opacity: 0.7;
+}
+
+.navlink {
+  text-align: center;
+}
+.navlink a {
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px solid black;
+}
+
+.nav-active {
+  right: 0;
+}
+
+.top-pane {
+  background-color: #f7eeaa;
+  background-attachment: fixed;
+  padding-top: 120px;
+  height: 100%;
+  background-size: cover;
+  -webkit-transform: skewY(-1deg);
+  -moz-transform: skewY(-1deg);
+  -ms-transform: skewY(-1deg);
+  -o-transform: skewY(-1deg);
+  transform: skewY(-1deg);
+  margin-top: -150px;
+  border-bottom: black 1px solid;
+}
+
+.about-text {
+  word-wrap: wrap;
+  -ms-word-wrap: wrap;
+}
+.about-text p {
+  overflow-x: visible;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.top-wrapper {
+  display: grid;
+  margin-top: 30px;
+  padding: 10px;
+  padding-bottom: 30px;
+  -webkit-transform: skewY(1deg);
+  -moz-transform: skewY(1deg);
+  -ms-transform: skewY(1deg);
+  -o-transform: skewY(1deg);
+  transform: skewY(1deg);
+}
+.top-wrapper .grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.top-wrapper .character {
+  grid-column: 1/-1;
+  background-color: green;
+}
+
+@media screen and (min-width: 678px) {
+  .no-large {
+    display: none;
+  }
+
+  .burger {
+    font-size: 1.2em;
+    display: none;
+  }
+
+  .nav-wrapper {
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
+
+  .nav {
+    display: flex;
+    position: relative;
+    right: 10px;
+    top: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .navlink {
+    list-style-type: none;
+    margin: 0;
+  }
+  .navlink a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Indie Flower", cursive;
+  }
+  .navlink a:hover {
+    color: #3399ff;
+  }
+}
+
+/*# sourceMappingURL=custom.css.map */
