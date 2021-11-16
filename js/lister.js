@@ -10,7 +10,7 @@ for (i = 0; i < characters.length; i++) {
 console.log(activeClowns);
 
 const charCardMarkup = `${activeClowns.map(char => `
-<div class="char-card">
+<div class="card">
 <ul id="charData">
 <li class="charPic"><img src="${char.image}" alt="character pic"></li>
 <li class="charName">${char.name}</li>

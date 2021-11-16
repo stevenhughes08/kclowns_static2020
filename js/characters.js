@@ -4,7 +4,7 @@ characters = [{
         tagline: "What's that smell? Usually its Simcha.",
         about: "This loveable tramp is driven by his immedate desires, but don't call him a hedonist becuase he does not know what that means. Simcha loves everybody, but not nearly as much as vodka.",
         actor: "Steven Hughes",
-        image: '../images/simcha.jpg',
+        image: 'images/simcha_desire.jpg',
         isActive: true
             //traits = ['puppy dog eyes', 'child like demeanor', 'purple']
     },
@@ -13,7 +13,7 @@ characters = [{
         tagline: 'Have you ever felt out of place?',
         about: "She is foreign girl in a foreign land. Due to unforseen circumstances Bubble-ishsus was forced to leave her birthplace of Abooland. It's best not to bring up those circumstances. She does her best to get by despite not speaking the language but do not let her limited vocabulary fool you. Bubble-ishus is often in control of every situation.",
         actor: 'Tatyana Malkin',
-        image: '../images/bubbles.jpg',
+        image: '/images/bubbles.jpg',
         isActive: true
             //traits = ['adorable', 'resourceful', 'blue']
     },

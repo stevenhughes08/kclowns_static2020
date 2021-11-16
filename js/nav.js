@@ -17,7 +17,7 @@ const navs = [{
         Alt: ' Click here to visit Link-2 '
     },
     {
-        Text: ' Link-3 ',
+        Text: ' Socials ',
         Url: ' link-3.html ',
         Class: ' Link-3 ',
         Alt: ' Click Here to visit Link 3 '

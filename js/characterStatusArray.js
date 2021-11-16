@@ -10,7 +10,7 @@ characterStatus = [{
     },
     {
         name: 'Salty',
-        isActive: true
+        isActive: false
     },
     {
         name: 'Katya',
@@ -26,7 +26,7 @@ characterStatus = [{
     },
     {
         name: 'Duke',
-        isActive: false
+        isActive: true
     },
     {
         name: 'Buster Backwash',
