@@ -21,3 +21,18 @@
     width: 100%;
     margin: 3rem;
 }
+
+.order0 {
+    display: flex;
+    order: 0;
+}
+
+.order1 {
+    display: flex;
+    order: 1;
+}
+
+.order2 {
+    display: flex;
+    order: 2;
+}

@@ -22,6 +22,21 @@
   margin: 3rem;
 }
 
+.order0 {
+  display: flex;
+  order: 0;
+}
+
+.order1 {
+  display: flex;
+  order: 1;
+}
+
+.order2 {
+  display: flex;
+  order: 2;
+}
+
 html,
 body {
   margin: 0;
@@ -177,6 +192,22 @@ header {
 .top-wrapper .character {
   grid-column: 1/-1;
   background-color: green;
+}
+
+.card {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: rgba(245, 245, 245, 0.527);
+  max-width: 98%;
+}
+@media (max-width: 992px) {
+  .card {
+    max-width: 60%;
+  }
+  .card img {
+    flex-direction: row;
+    max-width: 48%;
+  }
 }
 
 @media screen and (min-width: 678px) {

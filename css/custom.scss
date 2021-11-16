@@ -176,6 +176,20 @@ header {
 //     }
 // }
 // Flexbox Character card 
+.card {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgba(245, 245, 245, 0.527);
+    max-width: 98%;
+    @include breakpoint-down(md) {
+        max-width: 60%;
+        img {
+            flex-direction: row;
+            max-width: 48%;
+        }
+    }
+}
+
 // Character Cars Grid
 // .char-card-container {
 //     grid-area: card-container;
