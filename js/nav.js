@@ -68,6 +68,6 @@ burger.addEventListener('click', function() {
 
 // Append clown head after the list slide in menu
 
-var item = document.createElement('li');
+const item = document.createElement('li');
 item.innerHTML = '<img class="no-large dorak-nav-pic" src= "images/clown_head_line_art2.png">';
 document.getElementsByClassName(' nav ')[0].append(item);

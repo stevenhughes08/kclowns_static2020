@@ -10,18 +10,25 @@
 
 <body>
     <div class="card">
-        <div class="col">
-            <div class="card-text card-prop">
-                <h2 class="char-name">${char.name}</h2>
-                <p>${char.tagline}</p>
-                <p>${char.about}</p>
-            </div>
+        <div class="row">
+            <h2 class="char-name">
+                <p class="text-center">${char.name}</p>
+            </h2>
         </div>
-        <div class="col">
-            <div class="card-img card-prop">
-                <img class="center img-fluid" src="${char.image}" alt="Follow ${char.name}">
-            </div>
+        <div class="row">
 
+            <div class="col">
+                <div class="card-text card-prop">
+                    <p>${char.tagline}</p>
+                    <p>${char.about}</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card-img card-prop">
+                    <img class="center img-fluid" src="${char.image}" alt="Follow ${char.name}">
+                </div>
+
+            </div>
         </div>
     </div>
 </body>

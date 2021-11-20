@@ -36,6 +36,13 @@ header {
     display: none;
 }
 
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 2147483647;
+}
+
 .social-media-pane {
     & a {
         text-decoration: none;
@@ -71,6 +78,7 @@ header {
 }
 
 .nav {
+    display: flex;
     margin: 0;
     background: darken($primary, 25%);
     color: #ccc;
@@ -84,13 +92,14 @@ header {
     list-style-type: none;
     padding: 20px;
     transition: all 400ms;
+    z-index: 2147483647;
     .dorak-nav-pic {
         position: absolute;
         align-self: center;
         bottom: 20px;
         width: 80%;
         max-width: 80%;
-        margin: 10%;
+        margin: 1rem;
         transform: scale(30%) rotate(-10deg);
         opacity: .7;
     }
@@ -114,6 +123,8 @@ header {
 
 .nav-active {
     right: 0;
+    height: 100vh;
+    min-width: 200px;
 }
 
 // End NavBar code
@@ -178,9 +189,16 @@ header {
 // Flexbox Character card 
 .card {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     background-color: rgba(245, 245, 245, 0.527);
     max-width: 98%;
+    .char-name {
+        text-align: center;
+        font-size: 3.25rem;
+        font-weight: 700;
+        width: 100%;
+        font-family: $header-font;
+    }
     @include breakpoint-up(lg) {
         flex-direction: row;
         max-width: 60%;
@@ -246,6 +264,104 @@ header {
             font-family: $header-font;
             &:hover {
                 color: #3399ff;
+            }
+        }
+    }
+}
+
+// Slider
+#slidesPane {
+    * {
+        box-sizing: border-box;
+    }
+    .slideshow-container {
+        max-width: 2048px;
+        position: relative;
+        margin: auto;
+        padding-top: 70px !important;
+        .hero-clown {
+            width: 100%;
+        }
+        .dots-center {
+            text-align: center;
+        }
+        .clown-slides {
+            display: none;
+        }
+        // Next and Previous Btns
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6 ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.8)
+            }
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        // Caption Text
+        .caption-txt {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8x 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .number-text {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        // Fading animation
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 6000ms;
+        }
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
             }
         }
     }
